@@ -1,0 +1,1328 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>虫虫羞羞歪歪妖精_国产原创动画剧集_妖怪奇幻世界观</title>
+<meta name="description" content="虫虫羞羞歪歪妖精是一部国产原创妖怪奇幻动画，页面收录分集剧情、角色档案、世界观设定解析、观看顺序指南与观众评论，适合喜欢妖怪题材和国创短剧的观众参考。">
+<meta name="keywords" content="国产妖怪动画,奇幻短剧,分集剧情,角色档案,国创动画">
+<style>
+:root{
+  --ink:#1a1b2e;
+  --ink-2:#3c3e58;
+  --ink-3:#6b6d87;
+  --paper:#f6f4ee;
+  --panel:#ffffff;
+  --panel-2:#fbf9f3;
+  --line:#e3dfd3;
+  --line-2:#d2ccbc;
+  --brand:#2f6b5e;
+  --brand-2:#1f4a40;
+  --brand-soft:#e4efeb;
+  --accent:#c2582e;
+  --accent-soft:#f7e6dd;
+  --gold:#a9822d;
+  --gold-soft:#f4ecd8;
+  --radius:14px;
+  --radius-sm:8px;
+  --shadow:0 1px 2px rgba(26,27,46,.05),0 8px 24px -12px rgba(26,27,46,.18);
+  --shadow-sm:0 1px 2px rgba(26,27,46,.06);
+  --font:system-ui,-apple-system,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --sticky-h:104px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--sticky-h)}
+body{
+  margin:0;font-family:var(--font);background:var(--paper);color:var(--ink);
+  font-size:15.5px;line-height:1.75;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700;letter-spacing:.01em}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+button{font-family:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+/* ---------- sticky stack ---------- */
+.sticky-stack{position:sticky;top:0;z-index:60}
+.announce{
+  background:linear-gradient(90deg,var(--brand-2),var(--brand));
+  color:#eef6f2;font-size:13px;letter-spacing:.02em;
+}
+.announce-inner{
+  max-width:1320px;margin:0 auto;padding:7px 20px;
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+}
+.announce .tag{
+  background:var(--gold);color:#20180a;font-weight:700;font-size:11px;
+  padding:1px 8px;border-radius:99px;letter-spacing:.06em;flex:none;
+}
+.announce a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+.announce .dot{opacity:.4}
+
+header.site{
+  background:rgba(255,255,255,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);box-shadow:var(--shadow-sm);
+}
+.head-inner{
+  max-width:1320px;margin:0 auto;padding:10px 20px;
+  display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:11px;flex:none}
+.brand-mark{width:42px;height:42px;flex:none}
+.brand-text{display:flex;flex-direction:column;line-height:1.2}
+.brand-name{font-size:17px;font-weight:800;letter-spacing:.04em;color:var(--brand-2)}
+.brand-sub{font-size:10.5px;color:var(--ink-3);letter-spacing:.16em;text-transform:uppercase}
+nav.main{display:flex;gap:2px;flex-wrap:wrap;align-items:center;margin-left:auto}
+nav.main a{
+  font-size:13.5px;color:var(--ink-2);padding:6px 10px;border-radius:99px;
+  white-space:nowrap;
+}
+nav.main a:hover{background:var(--brand-soft);color:var(--brand-2);text-decoration:none}
+.head-tools{display:flex;align-items:center;gap:8px;flex:none}
+.search-wrap{position:relative}
+.search-wrap input{
+  width:172px;padding:7px 12px;border:1px solid var(--line-2);border-radius:99px;
+  font-size:13px;background:var(--panel-2);color:var(--ink);font-family:inherit;
+  transition:border-color .2s,width .2s;
+}
+.search-wrap input:focus{border-color:var(--brand);width:200px;outline:none;background:#fff}
+.head-cta{
+  background:var(--brand);color:#fff;border:none;border-radius:99px;
+  padding:8px 16px;font-size:13px;font-weight:600;letter-spacing:.02em;
+}
+.head-cta:hover{background:var(--brand-2)}
+.search-note{
+  font-size:12px;color:var(--accent);position:absolute;right:0;top:calc(100% + 6px);
+  background:#fff;border:1px solid var(--accent-soft);padding:3px 9px;border-radius:6px;
+  white-space:nowrap;display:none;box-shadow:var(--shadow-sm);
+}
+.search-note.on{display:block}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 380px at 84% -10%,rgba(47,107,94,.13),transparent 62%),
+    radial-gradient(700px 340px at 8% 108%,rgba(194,88,46,.11),transparent 60%),
+    linear-gradient(180deg,#fffdf8,#f6f4ee);
+  border-bottom:1px solid var(--line);
+}
+.hero-inner{
+  max-width:1320px;margin:0 auto;padding:44px 20px 46px;
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:40px;align-items:center;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.14em;
+  color:var(--brand);font-weight:700;text-transform:uppercase;
+  background:var(--brand-soft);padding:4px 12px;border-radius:99px;margin-bottom:16px;
+}
+.eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--brand)}
+h1{
+  font-size:clamp(30px,4.1vw,46px);letter-spacing:.03em;color:var(--ink);
+  margin-bottom:16px;
+}
+h1 .brush{
+  background:linear-gradient(180deg,transparent 66%,rgba(169,130,45,.32) 66%);
+}
+.hero-lead{font-size:15.5px;color:var(--ink-2);max-width:44em;line-height:1.85}
+.hero-lead strong{color:var(--brand-2);font-weight:700}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn{
+  display:inline-flex;align-items:center;gap:7px;padding:10px 20px;border-radius:99px;
+  font-size:14px;font-weight:600;border:1px solid transparent;transition:.18s;
+}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:var(--brand-2);text-decoration:none}
+.btn-ghost{background:#fff;color:var(--ink-2);border-color:var(--line-2)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand-2);text-decoration:none}
+.hero-stats{display:flex;gap:26px;margin-top:28px;flex-wrap:wrap}
+.hero-stats div{display:flex;flex-direction:column}
+.hero-stats b{font-size:20px;color:var(--brand-2);letter-spacing:.02em;line-height:1.3}
+.hero-stats span{font-size:11.5px;color:var(--ink-3);letter-spacing:.08em}
+.hero-art{position:relative;display:flex;justify-content:center}
+.hero-art svg{width:100%;max-width:420px;height:auto;filter:drop-shadow(0 18px 34px rgba(31,74,64,.16))}
+
+/* ---------- layout ---------- */
+.shell{
+  max-width:1320px;margin:0 auto;padding:34px 20px 60px;
+  display:grid;grid-template-columns:186px minmax(0,1fr) 268px;gap:28px;align-items:start;
+}
+.channel-col{position:sticky;top:calc(var(--sticky-h) + 14px)}
+.channel-box{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 12px;box-shadow:var(--shadow-sm);
+}
+.channel-box h2{
+  font-size:11.5px;letter-spacing:.16em;color:var(--ink-3);font-weight:700;
+  padding:0 6px 9px;border-bottom:1px dashed var(--line-2);margin-bottom:8px;
+}
+.channel-box ul{display:flex;flex-direction:column;gap:1px}
+.channel-box a{
+  display:flex;align-items:center;justify-content:space-between;gap:6px;
+  font-size:13.5px;color:var(--ink-2);padding:6px 8px;border-radius:var(--radius-sm);
+}
+.channel-box a:hover{background:var(--brand-soft);color:var(--brand-2);text-decoration:none}
+.channel-box a em{font-style:normal;font-size:11px;color:var(--ink-3)}
+.channel-note{
+  margin-top:12px;padding:10px 10px;background:var(--gold-soft);border-radius:var(--radius-sm);
+  font-size:11.5px;color:#6b5416;line-height:1.65;
+}
+main{min-width:0}
+.side-col{display:flex;flex-direction:column;gap:20px;position:sticky;top:calc(var(--sticky-h) + 14px)}
+
+/* ---------- generic panel ---------- */
+.panel{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow-sm);
+}
+.sec{margin-bottom:34px}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:14px;flex-wrap:wrap}
+.sec-head h2{font-size:21px;letter-spacing:.02em;color:var(--ink)}
+.sec-head h2 .num{color:var(--gold);font-size:13px;font-weight:700;letter-spacing:.14em;margin-right:8px;vertical-align:2px}
+.sec-head .more{font-size:12.5px;color:var(--ink-3)}
+.sec-sub{font-size:13px;color:var(--ink-3);margin-top:4px}
+
+/* overview */
+.overview{padding:22px 24px;border-left:3px solid var(--brand)}
+.overview p{font-size:14.5px;color:var(--ink-2);line-height:1.9;margin-bottom:12px}
+.overview p:last-child{margin-bottom:0}
+.overview .hl{color:var(--brand-2);font-weight:600}
+
+/* cards */
+.card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;display:flex;flex-direction:column;transition:.18s;box-shadow:var(--shadow-sm);
+}
+.card:hover{box-shadow:var(--shadow);transform:translateY(-2px);border-color:var(--line-2)}
+.card .thumb{position:relative;aspect-ratio:4/3;background:var(--panel-2);overflow:hidden}
+.card .thumb img{width:100%;height:100%;object-fit:cover}
+.card .badge{
+  position:absolute;top:9px;left:9px;background:rgba(31,74,64,.9);color:#fff;
+  font-size:11px;padding:2px 9px;border-radius:99px;letter-spacing:.04em;backdrop-filter:blur(4px);
+}
+.card .heat{
+  position:absolute;bottom:9px;right:9px;background:rgba(26,27,46,.72);color:#fdf7e6;
+  font-size:11px;padding:2px 8px;border-radius:99px;letter-spacing:.02em;
+}
+.card .body{padding:13px 14px 15px;display:flex;flex-direction:column;gap:7px;flex:1}
+.card h3{font-size:15px;line-height:1.45;color:var(--ink)}
+.card .desc{font-size:12.5px;color:var(--ink-3);line-height:1.72;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tags span{
+  font-size:11px;color:var(--brand-2);background:var(--brand-soft);
+  padding:2px 8px;border-radius:99px;letter-spacing:.02em;
+}
+.tags span.t2{background:var(--accent-soft);color:#8f3d1c}
+.tags span.t3{background:var(--gold-soft);color:#6b5416}
+
+/* updates list */
+.updates{padding:6px 20px 14px}
+.updates li{
+  display:grid;grid-template-columns:78px minmax(0,1fr);gap:14px;
+  padding:12px 0;border-bottom:1px dashed var(--line);align-items:baseline;
+}
+.updates li:last-child{border-bottom:none}
+.updates .t{font-size:12px;color:var(--gold);font-weight:700;letter-spacing:.02em;font-variant-numeric:tabular-nums}
+.updates .n{font-size:14px;font-weight:600;color:var(--ink)}
+.updates .n a{color:inherit}
+.updates .n a:hover{color:var(--brand);text-decoration:none}
+.updates .s{font-size:12.5px;color:var(--ink-3);display:block;margin-top:1px}
+
+/* categories */
+.cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.cat{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 14px 13px;display:flex;flex-direction:column;gap:5px;transition:.16s;
+}
+.cat:hover{border-color:var(--brand);background:var(--brand-soft);text-decoration:none}
+.cat b{font-size:14px;color:var(--ink)}
+.cat span{font-size:11.5px;color:var(--ink-3);line-height:1.6}
+.cat i{font-style:normal;font-size:11px;color:var(--brand);letter-spacing:.06em}
+
+/* deep read */
+.read{padding:26px 30px}
+.read h2{font-size:23px;margin-bottom:6px}
+.read .meta{font-size:12px;color:var(--ink-3);margin-bottom:18px;letter-spacing:.04em}
+.read h3{
+  font-size:16.5px;margin:24px 0 10px;padding-left:11px;border-left:3px solid var(--gold);
+  color:var(--ink);
+}
+.read h3:first-of-type{margin-top:8px}
+.read p{font-size:14.5px;color:var(--ink-2);line-height:1.92;margin-bottom:11px}
+.read ul{margin:6px 0 14px;display:flex;flex-direction:column;gap:7px}
+.read ul li{
+  font-size:14px;color:var(--ink-2);line-height:1.8;padding-left:18px;position:relative;
+}
+.read ul li::before{
+  content:"";position:absolute;left:3px;top:.72em;width:6px;height:6px;
+  border-radius:2px;background:var(--brand);transform:rotate(45deg);
+}
+.read ul li b{color:var(--brand-2)}
+
+/* compare */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin:8px 0 16px}
+.compare > div{padding:14px 16px}
+.compare .c1{background:var(--panel-2);border-right:1px solid var(--line)}
+.compare .c2{background:#fff}
+.compare h4{font-size:13.5px;color:var(--brand-2);margin-bottom:8px;letter-spacing:.03em}
+.compare dl{margin:0;display:flex;flex-direction:column;gap:7px}
+.compare dt{font-size:11.5px;color:var(--ink-3);letter-spacing:.06em}
+.compare dd{margin:0;font-size:13px;color:var(--ink-2);line-height:1.7}
+
+/* guide steps */
+.steps{display:flex;flex-direction:column;gap:0;counter-reset:st}
+.step{
+  display:grid;grid-template-columns:46px minmax(0,1fr);gap:16px;
+  padding:16px 0;border-bottom:1px dashed var(--line);
+}
+.step:last-child{border-bottom:none}
+.step .no{
+  counter-increment:st;width:36px;height:36px;border-radius:10px;background:var(--brand-soft);
+  color:var(--brand-2);font-weight:800;font-size:15px;display:grid;place-items:center;
+  border:1px solid #cfe2db;
+}
+.step .no::before{content:counter(st,decimal-leading-zero)}
+.step h4{font-size:14.5px;margin-bottom:5px;color:var(--ink)}
+.step p{font-size:13.5px;color:var(--ink-3);line-height:1.8}
+
+/* faq */
+.faq-list{display:flex;flex-direction:column;gap:9px}
+details.qa{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);
+  overflow:hidden;
+}
+details.qa summary{
+  list-style:none;cursor:pointer;padding:13px 16px;font-size:14px;font-weight:600;
+  color:var(--ink);display:flex;align-items:center;justify-content:space-between;gap:12px;
+}
+details.qa summary::-webkit-details-marker{display:none}
+details.qa summary::after{
+  content:"+";font-size:17px;color:var(--brand);font-weight:400;flex:none;transition:.2s;
+}
+details.qa[open] summary::after{transform:rotate(45deg)}
+details.qa[open] summary{border-bottom:1px solid var(--line);background:var(--panel-2)}
+details.qa .ans{padding:13px 16px 15px;font-size:13.5px;color:var(--ink-2);line-height:1.88}
+
+/* comments */
+.comments{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cmt{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:12px 14px;display:flex;flex-direction:column;gap:6px;
+}
+.cmt .who{display:flex;align-items:center;gap:8px}
+.cmt .av{
+  width:26px;height:26px;border-radius:50%;flex:none;display:grid;place-items:center;
+  font-size:11px;font-weight:700;color:#fff;letter-spacing:0;
+}
+.cmt .name{font-size:12.5px;font-weight:700;color:var(--ink)}
+.cmt .time{font-size:11px;color:var(--ink-3);margin-left:auto;font-variant-numeric:tabular-nums}
+.cmt p{font-size:12.8px;color:var(--ink-2);line-height:1.78}
+.cmt .ref{font-size:11.5px;color:var(--brand);background:var(--brand-soft);padding:1px 8px;border-radius:99px;align-self:flex-start}
+
+/* news */
+.news{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.news-item{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 16px;display:flex;flex-direction:column;gap:6px;
+}
+.news-item .d{font-size:11.5px;color:var(--gold);font-weight:700;letter-spacing:.04em}
+.news-item h4{font-size:14px;line-height:1.5}
+.news-item h4 a{color:var(--ink)}
+.news-item h4 a:hover{color:var(--brand);text-decoration:none}
+.news-item p{font-size:12.5px;color:var(--ink-3);line-height:1.75}
+
+/* related tags */
+.rel-tags{display:flex;flex-wrap:wrap;gap:9px}
+.rel-tags a{
+  font-size:13px;color:var(--ink-2);background:var(--panel);border:1px solid var(--line);
+  padding:7px 14px;border-radius:99px;transition:.16s;
+}
+.rel-tags a:hover{border-color:var(--brand);color:var(--brand-2);background:var(--brand-soft);text-decoration:none}
+.rel-tags a b{color:var(--gold);font-weight:700;margin-right:6px;font-size:11px}
+
+/* ranking + timeline */
+.rank{padding:6px 18px 12px}
+.rank li{
+  display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:12px;align-items:center;
+  padding:10px 0;border-bottom:1px dashed var(--line);
+}
+.rank li:last-child{border-bottom:none}
+.rank .idx{
+  font-size:13px;font-weight:800;color:var(--ink-3);font-variant-numeric:tabular-nums;text-align:center;
+}
+.rank li:nth-child(1) .idx{color:var(--accent)}
+.rank li:nth-child(2) .idx{color:var(--gold)}
+.rank li:nth-child(3) .idx{color:var(--brand)}
+.rank .rn{font-size:13.5px;font-weight:600;color:var(--ink);line-height:1.5}
+.rank .rs{font-size:11.5px;color:var(--ink-3);display:block;margin-top:1px}
+.rank .rv{font-size:12px;color:var(--accent);font-weight:700;font-variant-numeric:tabular-nums}
+
+.timeline{padding:16px 20px 8px;position:relative}
+.timeline::before{
+  content:"";position:absolute;left:29px;top:20px;bottom:22px;width:1px;background:var(--line-2);
+}
+.tl-item{position:relative;padding:0 0 16px 30px}
+.tl-item::before{
+  content:"";position:absolute;left:4px;top:6px;width:9px;height:9px;border-radius:50%;
+  background:#fff;border:2px solid var(--brand);
+}
+.tl-item .tl-d{font-size:11.5px;color:var(--gold);font-weight:700;letter-spacing:.04em}
+.tl-item .tl-t{font-size:13.5px;font-weight:600;color:var(--ink);margin-top:1px}
+.tl-item .tl-s{font-size:12px;color:var(--ink-3);line-height:1.7;margin-top:2px}
+
+/* side widgets */
+.widget{padding:14px 16px 16px}
+.widget h3{
+  font-size:12px;letter-spacing:.14em;color:var(--ink-3);font-weight:700;
+  padding-bottom:9px;border-bottom:1px dashed var(--line-2);margin-bottom:10px;
+}
+.widget .wl{display:flex;flex-direction:column;gap:2px}
+.widget .wl a{
+  font-size:13px;color:var(--ink-2);padding:5px 6px;border-radius:6px;display:flex;gap:8px;
+}
+.widget .wl a:hover{background:var(--panel-2);color:var(--brand-2);text-decoration:none}
+.widget .wl a i{font-style:normal;color:var(--gold);font-size:11px;font-weight:700;flex:none;padding-top:2px}
+.widget p.small{font-size:12.3px;color:var(--ink-3);line-height:1.8}
+.pulse{display:flex;flex-direction:column;gap:10px}
+.pulse .p-item{display:flex;gap:9px;align-items:flex-start}
+.pulse .p-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);margin-top:8px;flex:none}
+.pulse .p-t{font-size:12.5px;color:var(--ink-2);line-height:1.7}
+.pulse .p-t b{color:var(--ink);font-weight:600}
+
+/* footer */
+footer.site{
+  background:#20222f;color:#c8cad8;margin-top:20px;
+  border-top:3px solid var(--brand);
+}
+.foot-inner{max-width:1320px;margin:0 auto;padding:40px 20px 26px}
+.foot-top{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:32px;padding-bottom:28px;border-bottom:1px solid #323443}
+.foot-brand .fb-name{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.foot-brand .fb-name b{font-size:16px;color:#fff;letter-spacing:.04em}
+.foot-brand p{font-size:12.5px;line-height:1.85;color:#9a9cb0;max-width:30em}
+.foot-col h4{font-size:12px;letter-spacing:.14em;color:#8b8da3;margin-bottom:11px;font-weight:700}
+.foot-col ul{display:flex;flex-direction:column;gap:7px}
+.foot-col a{font-size:12.8px;color:#b9bbcc}
+.foot-col a:hover{color:#fff;text-decoration:none}
+.foot-bottom{
+  padding-top:18px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-size:11.5px;color:#7e8095;line-height:1.8;
+}
+.foot-bottom .note{max-width:60em}
+
+@media (max-width:1180px){
+  .shell{grid-template-columns:minmax(0,1fr) 260px;gap:24px}
+  .channel-col{grid-column:1/-1;position:static}
+  .channel-box ul{flex-direction:row;flex-wrap:wrap;gap:4px}
+  .channel-box a{font-size:13px;padding:5px 11px;background:var(--panel-2)}
+  .channel-note{display:none}
+  .card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cat-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:1024px){
+  :root{--sticky-h:96px}
+  .hero-inner{grid-template-columns:1fr;gap:26px;padding:32px 20px 36px}
+  .hero-art{order:-1;max-width:300px;margin:0 auto}
+  .comments{grid-template-columns:1fr}
+  .news{grid-template-columns:1fr}
+  .foot-top{grid-template-columns:1fr 1fr;gap:24px}
+}
+@media (max-width:860px){
+  .shell{grid-template-columns:1fr}
+  .side-col{position:static;display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+  nav.main{order:3;width:100%;margin-left:0;overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px}
+  nav.main a{font-size:12.5px;padding:5px 9px}
+  .head-tools{margin-left:auto}
+  .search-wrap input{width:130px}
+  .search-wrap input:focus{width:150px}
+  .compare{grid-template-columns:1fr}
+  .compare .c1{border-right:none;border-bottom:1px solid var(--line)}
+}
+@media (max-width:740px){
+  :root{--sticky-h:118px}
+  body{font-size:15px}
+  .hero-stats{gap:18px}
+  .card-grid{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:1fr 1fr}
+  .side-col{grid-template-columns:1fr}
+  .read{padding:20px 18px}
+  .overview{padding:18px}
+  .sec-head h2{font-size:18.5px}
+  .head-inner{padding:9px 14px;gap:12px}
+  .brand-name{font-size:15.5px}
+  .announce-inner{padding:6px 14px;font-size:12px}
+  .foot-top{grid-template-columns:1fr}
+  .updates{padding:4px 14px 10px}
+  .updates li{grid-template-columns:64px minmax(0,1fr);gap:10px}
+  .steps .step{grid-template-columns:38px minmax(0,1fr);gap:12px}
+  .rel-tags a{font-size:12.5px;padding:6px 12px}
+  .search-wrap input{width:112px;font-size:12.5px}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<div class="sticky-stack">
+  <div class="announce">
+    <div class="announce-inner">
+      <span class="tag">更新</span>
+      <span>11 月 25 日新增《歪歪妖精的第七盏灯》第 9 集与三份角色档案</span>
+      <span class="dot">·</span>
+      <span>本周共更新 12 条条目</span>
+      <span class="dot">·</span>
+      <a href="/#updates">查看更新记录</a>
+    </div>
+  </div>
+
+  <header class="site">
+    <div class="head-inner">
+      <div class="brand">
+        <svg class="brand-mark" viewBox="0 0 48 48" role="img" aria-label="虫虫羞羞歪歪妖精图形标志">
+          <rect width="48" height="48" rx="12" fill="#1f4a40"/>
+          <path d="M24 9c4 4.6 7.4 8.8 7.4 13.6 0 4.6-3.3 8.1-7.4 8.1s-7.4-3.5-7.4-8.1C16.6 17.8 20 13.6 24 9z" fill="#e4efeb"/>
+          <circle cx="21" cy="20" r="1.7" fill="#1f4a40"/>
+          <circle cx="27" cy="20" r="1.7" fill="#1f4a40"/>
+          <path d="M20 34c1.2 2.4 2.6 3.6 4 3.6s2.8-1.2 4-3.6" stroke="#a9822d" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+          <path d="M13 31c1.8 4 6 6.4 11 6.4s9.2-2.4 11-6.4" stroke="#c2582e" stroke-width="1.6" stroke-linecap="round" fill="none" opacity=".85"/>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name">虫虫羞羞歪歪妖精</span>
+          <span class="brand-sub">Yao Guai Animation Archive</span>
+        </div>
+      </div>
+
+      <nav class="main" aria-label="主导航">
+        <a href="/#overview">世界观</a>
+        <a href="/#featured">精选剧集</a>
+        <a href="/#updates">更新动态</a>
+        <a href="/#categories">分类</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#faq">问答</a>
+        <a href="/#comments">观众评论</a>
+        <a href="/#ranking">榜单</a>
+      </nav>
+
+      <div class="head-tools">
+        <div class="search-wrap">
+          <input id="site-search" type="search" placeholder="搜索剧集 / 角色" aria-label="搜索站内剧集与角色">
+          <span class="search-note" id="search-note">未找到匹配条目</span>
+        </div>
+        <button class="head-cta" type="button" onclick="location.href='/#featured'">开始追剧</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="eyebrow">国创妖怪奇幻 · 分集档案</span>
+      <h1><span class="brush">虫虫羞羞歪歪妖精</span></h1>
+      <p class="hero-lead">
+        一部以江南虫妖传说为底色的国产原创短剧，把<strong>虫、羞、歪</strong>三种妖性写成三条互相纠缠的支线：
+        虫线讲寄生与蜕变，羞线讲被看见的恐惧，歪线讲规则之外的活法。
+        这里按分集、角色、世界观三条脉络整理可查的条目信息，方便你判断从哪一集入坑、哪些支线可以跳读。
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#featured">看精选 9 部条目</a>
+        <a class="btn btn-ghost" href="/#guide">新手观看顺序</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>62 集</b><span>已上线正片</span></div>
+        <div><b>27 位</b><span>角色档案</span></div>
+        <div><b>9.1</b><span>观众综合评分</span></div>
+        <div><b>4 季</b><span>已定档结构</span></div>
+      </div>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 420 380" role="img" aria-label="虫妖、羞妖与歪妖三种形象组合插画">
+        <defs>
+          <linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#2f6b5e"/><stop offset="1" stop-color="#1f4a40"/>
+          </linearGradient>
+          <linearGradient id="lg2" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0" stop-color="#f7e6dd"/><stop offset="1" stop-color="#f4ecd8"/>
+          </linearGradient>
+        </defs>
+        <circle cx="210" cy="190" r="150" fill="url(#lg2)" opacity=".7"/>
+        <circle cx="210" cy="190" r="112" fill="none" stroke="#d2ccbc" stroke-dasharray="3 7"/>
+        <!-- 虫 -->
+        <g transform="translate(96,150)">
+          <ellipse cx="0" cy="34" rx="34" ry="40" fill="url(#lg1)"/>
+          <ellipse cx="0" cy="6" rx="24" ry="22" fill="#e4efeb"/>
+          <circle cx="-8" cy="2" r="3.4" fill="#1f4a40"/>
+          <circle cx="8" cy="2" r="3.4" fill="#1f4a40"/>
+          <path d="M-20 -8c-6-12-2-22 6-24M20 -8c6-12 2-22-6-24" stroke="#1f4a40" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <path d="M-30 38h-16M30 38h16M-28 54h-14M28 54h14" stroke="#2f6b5e" stroke-width="2.6" stroke-linecap="round"/>
+        </g>
+        <!-- 羞 -->
+        <g transform="translate(210,116)">
+          <circle cx="0" cy="0" r="42" fill="#fff"/>
+          <circle cx="0" cy="0" r="42" fill="none" stroke="#e3dfd3"/>
+          <path d="M-22 6c0 9 10 15 22 15s22-6 22-15" stroke="#c2582e" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="-15" cy="-8" r="3.6" fill="#3c3e58"/>
+          <circle cx="15" cy="-8" r="3.6" fill="#3c3e58"/>
+          <ellipse cx="-26" cy="4" rx="8" ry="4.6" fill="#f7c9b8" opacity=".9"/>
+          <ellipse cx="26" cy="4" rx="8" ry="4.6" fill="#f7c9b8" opacity=".9"/>
+        </g>
+        <!-- 歪 -->
+        <g transform="translate(322,168)">
+          <rect x="-34" y="-30" width="68" height="72" rx="20" fill="#a9822d" transform="rotate(-8)"/>
+          <circle cx="-11" cy="-4" r="3.4" fill="#fff"/>
+          <circle cx="11" cy="2" r="3.4" fill="#fff"/>
+          <path d="M-14 22q14 10 26-4" stroke="#fff" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+        </g>
+        <!-- 底部连线 -->
+        <path d="M96 300q114 34 228-10" stroke="#d2ccbc" stroke-width="1.6" fill="none" stroke-dasharray="4 6"/>
+        <circle cx="96" cy="300" r="3.4" fill="#2f6b5e"/>
+        <circle cx="210" cy="316" r="3.4" fill="#c2582e"/>
+        <circle cx="324" cy="290" r="3.4" fill="#a9822d"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="shell">
+  <!-- 左频道栏 -->
+  <aside class="channel-col" aria-label="频道索引">
+    <div class="channel-box">
+      <h2>频道索引</h2>
+      <ul>
+        <li><a href="/#overview">世界观概览 <em>12</em></a></li>
+        <li><a href="/#featured">精选剧集 <em>9</em></a></li>
+        <li><a href="/#updates">更新动态 <em>10</em></a></li>
+        <li><a href="/#categories">题材分类 <em>8</em></a></li>
+        <li><a href="/#deep">深度解析 <em>5</em></a></li>
+        <li><a href="/#guide">观看顺序 <em>4</em></a></li>
+        <li><a href="/#faq">常见问答 <em>6</em></a></li>
+        <li><a href="/#comments">观众评论 <em>16</em></a></li>
+        <li><a href="/#news">相关资讯 <em>6</em></a></li>
+        <li><a href="/#related">延伸方向 <em>8</em></a></li>
+        <li><a href="/#ranking">人气榜单 <em>8</em></a></li>
+        <li><a href="/#timeline">时间线 <em>6</em></a></li>
+      </ul>
+      <div class="channel-note">第 3 季《歪歪妖精的第七盏灯》正在更新，每周三、周六各一集。</div>
+    </div>
+  </aside>
+
+  <!-- 主内容 -->
+  <main>
+
+    <!-- 1 概览 -->
+    <section class="sec" id="overview">
+      <div class="sec-head">
+        <div>
+          <h2><span class="num">01</span>这个妖怪世界由什么构成</h2>
+          <p class="sec-sub">虫、羞、歪三条支线，加上一个讲规则的“灯”体系</p>
+        </div>
+      </div>
+      <div class="panel overview">
+        <p>
+          《虫虫羞羞歪歪妖精》把民间虫妖传说拆成三种妖性来写。<span class="hl">虫妖</span>擅长寄生与模仿，靠吞掉别人的声音活下去；
+          <span class="hl">羞妖</span>的力量来自“被看见”的恐惧，越躲越强，一旦被正面注视就会短暂失能；
+          <span class="hl">歪妖</span>不遵守妖界规矩，能改写小范围的规则，代价是自身记忆会一点点歪掉。
+        </p>
+        <p>
+          三条支线共用一个“灯”体系：每盏灯代表一条被承认的规则，点亮即生效，熄灭即失效。第 1—2 季主要讲虫线与羞线如何在人类小镇里互相试探，
+          第 3 季开始把叙事重心移到歪妖和灯的关系上。目前正片 62 集，单集 12—16 分钟，属于节奏偏快、信息密度较高的短剧结构。
+        </p>
+        <p>
+          值得先看的方向有三个：一是虫妖寄生单元的“换声”设定，几乎每集换一个被寄生者，适合单集独立观看；
+          二是羞妖支线的视觉表达，用大量遮挡构图表现“不敢被看见”；三是歪妖改写规则时出现的文字扭曲动画，是全剧辨识度最高的段落。
+        </p>
+      </div>
+    </section>
+
+    <!-- 2 精选 -->
+    <section class="sec" id="featured">
+      <div class="sec-head">
+        <div>
+          <h2><span class="num">02</span>精选剧集与单元条目</h2>
+          <p class="sec-sub">按分集单元与支线整理的 9 个具体条目</p>
+        </div>
+        <a class="more" href="/#updates">看全部更新 →</a>
+      </div>
+      <div class="card-grid">
+
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/chongyao-dangan01/400/300" width="400" height="300" loading="lazy" alt="虫妖寄生单元第一集《换声》剧照">
+            <span class="badge">虫线 · 单元剧</span>
+            <span class="heat">热度 9.4</span>
+          </div>
+          <div class="body">
+            <h3>《换声》第 1 集：谁拿走了她的口音</h3>
+            <p class="desc">小镇裁缝一夜之间说不出本地话，只会讲外乡方言。虫妖以声音为食，被寄生者会逐渐丢失母语。全剧开篇，用来交代寄生规则。</p>
+            <div class="tags"><span>寄生设定</span><span class="t2">开篇必看</span><span class="t3">12 分钟</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/xiuyao-mianju02/400/300" width="400" height="300" loading="lazy" alt="羞妖支线《面具铺》剧照">
+            <span class="badge">羞线 · 主线</span>
+            <span class="heat">热度 9.2</span>
+          </div>
+          <div class="body">
+            <h3>《面具铺》第 14—16 集：越躲越强</h3>
+            <p class="desc">羞妖寄居在一间卖面具的老铺，客人戴上面具才敢说话。三集连看才能理解“被注视即失能”的完整机制，是全剧构图最讲究的一段。</p>
+            <div class="tags"><span>羞妖机制</span><span class="t3">三集连看</span><span>遮挡构图</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/waiyao-guize03/400/300" width="400" height="300" loading="lazy" alt="歪妖支线《歪掉的规矩》剧照">
+            <span class="badge">歪线 · 主线</span>
+            <span class="heat">热度 9.6</span>
+          </div>
+          <div class="body">
+            <h3>《歪掉的规矩》第 31—33 集：改写一条村规</h3>
+            <p class="desc">歪妖把“夜里不许出门”改成“夜里只许出门”，全镇作息颠倒。这一段集中展示规则改写的能力边界，也第一次提到记忆损耗。</p>
+            <div class="tags"><span>规则改写</span><span class="t2">高能段落</span><span>记忆损耗</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/dengqizhan04/400/300" width="400" height="300" loading="lazy" alt="第三季《第七盏灯》剧照">
+            <span class="badge">第 3 季 · 连载</span>
+            <span class="heat">热度 9.5</span>
+          </div>
+          <div class="body">
+            <h3>《歪歪妖精的第七盏灯》第 9 集</h3>
+            <p class="desc">11 月 25 日上线。第七盏灯点亮后，歪妖第一次无法说出自己的名字。第 3 季的核心悬念从这里正式铺开。</p>
+            <div class="tags"><span>最新更新</span><span class="t2">今天上线</span><span>灯体系</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/chongchao05/400/300" width="400" height="300" loading="lazy" alt="虫妖特别篇《虫巢》剧照">
+            <span class="badge">特别篇 · 虫线</span>
+            <span class="heat">热度 8.8</span>
+          </div>
+          <div class="body">
+            <h3>特别篇《虫巢》：一集讲完四代寄生</h3>
+            <p class="desc">用 22 分钟讲一个家族四代人被同一只虫妖寄生的过程。时间跨度大，适合已经熟悉寄生规则之后再看，信息量偏密。</p>
+            <div class="tags"><span>特别篇</span><span class="t3">22 分钟</span><span>家族线</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/xiunv-honglian06/400/300" width="400" height="300" loading="lazy" alt="羞妖支线《红脸》剧照">
+            <span class="badge">羞线 · 单元</span>
+            <span class="heat">热度 8.9</span>
+          </div>
+          <div class="body">
+            <h3>《红脸》第 22 集：一场不敢上台的演出</h3>
+            <p class="desc">羞妖附在一位合唱团女孩身上，越临近演出越强。全剧少见的“温和结局”，适合不想看太压抑段落的观众。</p>
+            <div class="tags"><span>单集独立</span><span>温和结局</span><span class="t2">入门友好</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/waiyao-jiaohuan07/400/300" width="400" height="300" loading="lazy" alt="歪妖支线《交换》剧照">
+            <span class="badge">歪线 · 单元</span>
+            <span class="heat">热度 9.0</span>
+          </div>
+          <div class="body">
+            <h3>《交换》第 40 集：用记忆换一条捷径</h3>
+            <p class="desc">歪妖替人改一条规矩，收走一段记忆作为代价。这一集把“代价”讲得最清楚，也是理解第 3 季结局的关键前置。</p>
+            <div class="tags"><span>代价机制</span><span>关键前置</span><span class="t3">第 3 季伏笔</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/sanzhiyao08/400/300" width="400" height="300" loading="lazy" alt="三妖同框《同一口井》剧照">
+            <span class="badge">三线合流</span>
+            <span class="heat">热度 9.7</span>
+          </div>
+          <div class="body">
+            <h3>《同一口井》第 52—54 集：三种妖性同框</h3>
+            <p class="desc">虫、羞、歪第一次同时出现在同一场景，各自的能力互相牵制。全剧调度难度最高的一段，也是评分最高的一段。</p>
+            <div class="tags"><span>三线合流</span><span class="t2">评分最高</span><span>群像调度</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/qingming-deng09/400/300" width="400" height="300" loading="lazy" alt="世界观短片《灯谱》剧照">
+            <span class="badge">世界观 · 短片</span>
+            <span class="heat">热度 8.6</span>
+          </div>
+          <div class="body">
+            <h3>世界观短片《灯谱》：九盏灯的来历</h3>
+            <p class="desc">8 分钟独立短片，按顺序介绍九盏灯分别对应哪条规则。看完再回看正片，很多台词的含义会变得清楚。</p>
+            <div class="tags"><span>设定补完</span><span class="t3">8 分钟</span><span>九盏灯</span></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 3 更新 -->
+    <section class="sec" id="updates">
+      <div class="sec-head">
+        <div>
+          <h2><span class="num">03</span>最新更新与排播动态</h2>
+          <p class="sec-sub">截至 2026 年 11 月 25 日的条目变动</p>
+        </div>
+      </div>
+      <div class="panel">
+        <ul class="updates">
+          <li>
+            <span class="t">今天 09:30</span>
+            <div><span class="n"><a href="/#featured">《歪歪妖精的第七盏灯》第 9 集上线</a></span><span class="s">第七盏灯点亮，歪妖首次无法自报姓名。</span></div>
+          </li>
+          <li>
+            <span class="t">今天 08:10</span>
+            <div><span class="n">新增角色档案：灯匠·陶九</span><span class="s">补充其与九盏灯的铸造关系，附首次出场集数索引。</span></div>
+          </li>
+          <li>
+            <span class="t">昨天 21:10</span>
+            <div><span class="n">《面具铺》三集连看页面更新</span><span class="s">补充羞妖“被注视即失能”的时长设定说明。</span></div>
+          </li>
+          <li>
+            <span class="t">11 月 23 日</span>
+            <div><span class="n"><a href="/#deep">深度解析新增“记忆损耗”章节</a></span><span class="s">整理歪妖每次改写规则后丢失的具体记忆类型。</span></div>
+          </li>
+          <li>
+            <span class="t">11 月 21 日</span>
+            <div><span class="n">第 3 季第 8 集上线</span><span class="s">陶九交出第二盏灯，虫线支线短暂回归。</span></div>
+          </li>
+          <li>
+            <span class="t">11 月 18 日</span>
+            <div><span class="n">观众投票榜单更新</span><span class="s">《同一口井》升至第一，超过《歪掉的规矩》。</span></div>
+          </li>
+          <li>
+            <span class="t">11 月 15 日</span>
+            <div><span class="n">特别篇《虫巢》补充四代寄生关系图</span><span class="s">修正第二代寄生者的时间线错位问题。</span></div>
+          </li>
+          <li>
+            <span class="t">11 月 12 日</span>
+            <div><span class="n">新增“观看顺序”指南</span><span class="s">按单集独立、支线连看、全季通看三种路径整理。</span></div>
+          </li>
+          <li>
+            <span class="t">11 月 8 日</span>
+            <div><span class="n">《红脸》单集页面开放评论</span><span class="s">已收录 40 余条针对结局处理的讨论。</span></div>
+          </li>
+          <li>
+            <span class="t">11 月 3 日</span>
+            <div><span class="n">第 3 季定档信息公布</span><span class="s">确认共 14 集，每周三、周六各更新一集。</span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4 分类 -->
+    <section class="sec" id="categories">
+      <div class="sec-head">
+        <div>
+          <h2><span class="num">04</span>按题材与叙事类型分类</h2>
+          <p class="sec-sub">八个可直接对应搜索词的类别入口</p>
+        </div>
+      </div>
+      <div class="cat-grid">
+        <a class="cat" href="/#featured"><b>寄生单元剧</b><span>每集一个被寄生者，单集可独立观看</span><i>虫线 · 18 集</i></a>
+        <a class="cat" href="/#featured"><b>羞妖支线</b><span>以遮挡构图表现被看见的恐惧</span><i>羞线 · 14 集</i></a>
+        <a class="cat" href="/#featured"><b>规则改写</b><span>歪妖改写规矩及其代价</span><i>歪线 · 16 集</i></a>
+        <a class="cat" href="/#deep"><b>世界观设定</b><span>九盏灯体系与妖界秩序</span><i>设定 · 9 条</i></a>
+        <a class="cat" href="/#comments"><b>角色群像</b><span>27 位角色档案与关系网</span><i>角色 · 27 位</i></a>
+        <a class="cat" href="/#guide"><b>短剧入门</b><span>第一次接触从哪一集开始</span><i>指南 · 4 条</i></a>
+        <a class="cat" href="/#ranking"><b>高评分段落</b><span>按观众评分排序的剧集片段</span><i>榜单 · 8 条</i></a>
+        <a class="cat" href="/#news"><b>排播与定档</b><span>更新节奏、季数与特别篇安排</span><i>资讯 · 6 条</i></a>
+      </div>
+    </section>
+
+    <!-- 5 深度解析 -->
+    <section class="sec" id="deep">
+      <div class="panel read">
+        <h2>深度解析：三种妖性如何互相牵制</h2>
+        <p class="meta">全页唯一长阅读区 · 约 780 字 · 2026-11-23 修订</p>
+
+        <p>
+          把《虫虫羞羞歪歪妖精》当成单元怪谈看，会漏掉它真正的骨架：三种妖性不是并列的三条线，而是一套互相制约的能力系统。
+          虫妖靠吞声音壮大，羞妖靠被回避壮大，歪妖靠改写规矩壮大——三者的力量来源恰好对应“说”“看”“守”三种人类行为。
+          理解这一点，很多看起来随意的段落就有了必然性。
+        </p>
+
+        <h3>虫线：声音是货币，也是身份</h3>
+        <p>
+          虫妖的寄生逻辑可以概括为一句话：它不要你的身体，只要你的口音。被寄生者不会立刻出事，而是逐渐丢掉母语的发音习惯，
+          最后连自己原本的声音都认不出来。这条设定让虫线天然适合做成单元剧——每一集换一个被寄生者，就换一种“丢失”的具体形式。
+        </p>
+        <ul>
+          <li><b>《换声》</b>丢的是方言，讲的是地域身份；</li>
+          <li><b>《虫巢》</b>丢的是代际传承，四代人共用一副嗓子；</li>
+          <li><b>第 3 季第 8 集</b>丢的是称呼，被寄生者开始叫错亲人的名字。</li>
+        </ul>
+        <p>
+          判断一集虫线好不好看，可以看它有没有把“丢失”落到具体的生活细节上。只讲寄生过程、不讲丢失后果的集数，通常评价偏低。
+        </p>
+
+        <h3>羞线：被看见是一种攻击</h3>
+        <p>
+          羞妖的机制更反直觉：它依靠回避变强，一旦被正面注视就会短暂失能。这决定了羞线的镜头语言——大量门缝、帘子、背影、半张脸。
+          《面具铺》三集之所以被反复讨论，是因为它把“戴上面具才敢说话”做成了剧情装置，而不是单纯的视觉风格。
+        </p>
+        <p>
+          羞线的常见问题是节奏偏慢，因为回避本身就是静态的。编剧的处理办法是给每集安排一次“不得不被看见”的事件：
+          演出、点名、当众道歉。事件越具体，单集越立得住。
+        </p>
+
+        <h3>歪线：改写规则的人先被规则改写</h3>
+        <p>
+          歪妖能改写小范围规则，代价是自身记忆逐渐歪掉。这条线在第 3 季成为主线后，剧集重心从“怪谈”转向“代价”。
+          第 40 集《交换》把这个机制讲得最清楚：改一条规矩，收一段记忆，而收走哪一段不由当事人决定。
+        </p>
+        <div class="compare">
+          <div class="c1">
+            <h4>虫线 · 寄生型</h4>
+            <dl>
+              <dt>力量来源</dt><dd>吞食他人的声音</dd>
+              <dt>典型代价</dt><dd>被寄生者丢失母语</dd>
+              <dt>适合看法</dt><dd>单集独立，随手挑一集</dd>
+              <dt>代表段落</dt><dd>《换声》《虫巢》</dd>
+            </dl>
+          </div>
+          <div class="c2">
+            <h4>歪线 · 改写型</h4>
+            <dl>
+              <dt>力量来源</dt><dd>改写小范围规则</dd>
+              <dt>典型代价</dt><dd>自身记忆逐渐歪斜</dd>
+              <dt>适合看法</dt><dd>按顺序连看，伏笔密集</dd>
+              <dt>代表段落</dt><dd>《歪掉的规矩》《交换》</dd>
+            </dl>
+          </div>
+        </div>
+
+        <h3>灯体系：把三条线绑在一起的那根绳</h3>
+        <p>
+          九盏灯分别对应九条被承认的规则，点亮即生效。这个设定看似只是世界观装饰，实际承担了叙事枢纽的功能：
+          虫线要借灯封住寄生，羞线要借灯制造“不被看见”的场所，歪线则想直接吹灭灯。第 52—54 集《同一口井》之所以评分最高，
+          就是因为三种需求第一次在同一口井边正面冲突，谁都不能全身而退。
+        </p>
+        <p>
+          看第 3 季时，建议留意每集开头灯的状态：亮几盏、灭几盏、有没有被移动过。这个细节比台词更早透露剧情走向，
+          也是目前观众讨论区里考据最集中的部分。
+        </p>
+      </div>
+    </section>
+
+    <!-- 6 观看指南 -->
+    <section class="sec" id="guide">
+      <div class="sec-head">
+        <div>
+          <h2><span class="num">05</span>观看顺序与投入判断</h2>
+          <p class="sec-sub">先看什么、怎么判断一集值不值得看</p>
+        </div>
+      </div>
+      <div class="panel" style="padding:8px 22px 18px">
+        <div class="steps">
+          <div class="step">
+            <div class="no"></div>
+            <div>
+              <h4>先用《红脸》试水，判断自己吃不吃这种叙事</h4>
+              <p>第 22 集是单集独立、结局温和、信息量适中，不需要前置知识。如果这一集让你觉得节奏太慢，后面偏静态的羞线段落大概率也不合适。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="no"></div>
+            <div>
+              <h4>再补《换声》与《面具铺》，建立两条基础规则</h4>
+              <p>前者交代寄生规则，后者交代羞妖机制。这两条规则在后续所有集数里反复被引用，跳过会看不懂很多反应镜头。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="no"></div>
+            <div>
+              <h4>歪线建议按顺序连看，不要跳集</h4>
+              <p>从第 31 集《歪掉的规矩》到第 40 集《交换》，记忆损耗是逐集累加的，跳着看会误以为只是设定说明。这一段也是第 3 季所有伏笔的来源。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="no"></div>
+            <div>
+              <h4>最后看《同一口井》和世界观短片《灯谱》</h4>
+              <p>前者需要三条线的基础认知才能感受到调度，后者适合在看完正片后回头补设定。顺序反过来会让前者变成单纯的动作戏。</p>
+            </div>
+          </div>
+        </div>
+        <p style="font-size:13.5px;color:var(--ink-3);line-height:1.85;margin-top:14px;padding-top:14px;border-top:1px dashed var(--line)">
+          判断单集值不值得投入时间，可以看三个信号：这一集有没有落到具体的生活细节、有没有一次“不得不面对”的事件、结尾是否改变了某条规则的状态。
+          三条全中的集数，通常也是评分最高的那批。三条全无的，多为过渡集，可以快进。
+        </p>
+      </div>
+    </section>
+
+    <!-- 7 FAQ -->
+    <section class="sec" id="faq">
+      <div class="sec-head">
+        <div>
+          <h2><span class="num">06</span>常见问题</h2>
+          <p class="sec-sub">围绕分集、设定与观看选择的六个问题</p>
+        </div>
+      </div>
+      <div class="faq-list">
+        <details class="qa">
+          <summary>虫虫羞羞歪歪妖精一般多久更新一次？</summary>
+          <div class="ans">第 3 季采用周更双集制，每周三、周六各上线一集，单集 12—16 分钟。第 1、2 季已完结，可以一次性看完。特别篇与世界观短片不定期更新，通常在两季之间上线。</div>
+        </details>
+        <details class="qa">
+          <summary>虫线和歪线的区别到底在哪？</summary>
+          <div class="ans">虫线讲“被夺走”——虫妖吞掉声音，被寄生者逐渐丢失母语；歪线讲“被交换”——歪妖改写规则，代价是自身记忆歪斜。前者是外部入侵，后者是主动交易，观感差别很大：虫线更像单元怪谈，歪线更接近连续剧。</div>
+        </details>
+        <details class="qa">
+          <summary>第一次接触这个系列，从哪一集开始看比较好？</summary>
+          <div class="ans">推荐第 22 集《红脸》。它单集独立、结局温和、不依赖前置设定，能比较准确地反映全剧的叙事节奏。如果看完觉得合适，再回到第 1 集《换声》按顺序补基础规则。</div>
+        </details>
+        <details class="qa">
+          <summary>羞妖“被注视即失能”的设定有明确时长吗？</summary>
+          <div class="ans">剧中有明确交代：正面注视持续三秒以上，羞妖会短暂失能，时长约等于被注视的秒数。这个规则在《面具铺》第 16 集被完整演示，第 3 季也有两次关键使用。</div>
+        </details>
+        <details class="qa">
+          <summary>九盏灯的顺序重要吗？看的时候要不要记？</summary>
+          <div class="ans">重要，但不必强记。九盏灯分别对应九条规则，正片里会随剧情逐步点亮。建议只记当前亮了几盏、有没有被移动过，这个信息比具体顺序更能帮你预判剧情。完整顺序可以看世界观短片《灯谱》。</div>
+        </details>
+        <details class="qa">
+          <summary>歪妖改写规则的代价，具体会丢失哪些记忆？</summary>
+          <div class="ans">剧中呈现的记忆损耗有明确倾向：先丢最近的日常记忆，再丢人名，最后丢自我认知。第 40 集《交换》和第 3 季第 9 集都演示了这个递进过程，也是理解结局的关键。</div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 8 评论 -->
+    <section class="sec" id="comments">
+      <div class="sec-head">
+        <div>
+          <h2><span class="num">07</span>观众评论</h2>
+          <p class="sec-sub">16 条围绕具体条目与类型的讨论</p>
+        </div>
+      </div>
+      <div class="comments">
+
+        <div class="cmt"><div class="who"><span class="av" style="background:#2f6b5e">阿</span><span class="name">阿岚不吃虫</span><span class="time">今天 10:42</span></div><p>第 9 集看完有点懵，歪妖说不出自己名字那段，前面是不是埋过伏笔？回头翻第 40 集确实提过记忆损耗的顺序。</p><span class="ref">第七盏灯 第 9 集</span></div>
+
+        <div class="cmt"><div class="who"><span class="av" style="background:#c2582e">沉</span><span class="name">沉底的井</span><span class="time">今天 09:15</span></div><p>《同一口井》至今仍是最好的一段，三种妖性同框还互相牵制，调度难度肉眼可见。后面几集反而有点收不住。</p><span class="ref">同一口井 52—54</span></div>
+
+        <div class="cmt"><div class="who"><span class="av" style="background:#a9822d">木</span><span class="name">木木看剧</span><span class="time">昨天 22:31</span></div><p>羞线节奏是真的慢，但《面具铺》三集连看下来能理解为什么这么拍。戴面具才敢说话这个装置太贴题了。</p><span class="ref">面具铺 14—16</span></div>
+
+        <div class="cmt"><div class="who"><span class="av" style="background:#3c3e58">南</span><span class="name">南墙有灯</span><span class="time">昨天 20:08</span></div><p>第一次看的是《红脸》，觉得挺温和就入坑了，结果后面《歪掉的规矩》直接给我看愣住，风格差好多。</p><span class="ref">红脸 第 22 集</span></div>
+
+        <div class="cmt"><div class="who"><span class="av" style="background:#2f6b5e">九</span><span class="name">九盏灯考据党</span><span class="time">11 月 24 日</span></div><p>建议每集开头都注意灯的状态，第 3 季前六集里第三盏灯的位置一直在变，和后面陶九交灯完全对得上。</p><span class="ref">灯体系</span></div>
+
+        <div class="cmt"><div class="who"><span class="av" style="background:#c2582e">小</span><span class="name">小满不加班</span><span class="time">11 月 24 日</span></div><p>虫线单集独立这点很友好，下班随便挑一集看不会断片。《虫巢》那集信息量偏大，建议留到周末。</p><span class="ref">虫巢 特别篇</span></div>
+
+        <div class="cmt"><div class="who"><span class="av" style="background:#a9822d">橘</span><span class="name">橘子汽水味</span><span class="time">11 月 23 日</span></div><p>说实话第 2 季中段有几集挺水的，寄生过程讲了一堆，但没落到丢失什么具体的东西上，看得有点困。</p><span class="ref">第 2 季中段</span></div>
+
+        <div class="cmt"><div class="who"><span class="av" style="background:#3c3e58">晚</span><span class="name">晚风信箱</span><span class="time">11 月 23 日</span></div><p>《交换》这集把代价讲得最清楚，收走哪段记忆不由当事人决定，这个设定挺狠的，也是我留下来追第 3 季的原因。</p><span class="ref">交换 第 40 集</span></div>
+
+        <div class="cmt"><div class="who"><span class="av" style="background:#2f6b5e">青</span><span class="name">青苔与砖</span><span class="time">11 月 22 日</span></div><p>羞妖的遮挡构图确实好看，但连着看三四集会觉得闷，建议和虫线交替着看，观感会舒服很多。</p><span class="ref">羞线整体</span></div>
+
+        <div class="cmt"><div class="who"><span class="av" style="background:#c2582e">老</span><span class="name">老周看动画</span><span class="time">11 月 22 日</span></div><p>世界观短片《灯谱》应该早点出，我看完正片才补，好多台词的含义才反应过来。建议新人先看这个再进正片。</p><span class="ref">灯谱 短片</span></div>
+
+        <div class="cmt"><div class="who"><span class="av" style="background:#a9822d">阿</span><span class="name">阿枝枝</span><span class="time">11 月 21 日</span></div><p>第 8 集交第二盏灯那段，虫线短暂回归，节奏一下就提起来了。感觉编剧还是更擅长写虫线。</p><span class="ref">第 3 季 第 8 集</span></div>
+
+        <div class="cmt"><div class="who"><span class="av" style="background:#3c3e58">白</span><span class="name">白露未晞</span><span class="time">11 月 20 日</span></div><p>不吹不黑，单集质量波动挺大的。但《歪掉的规矩》那段文字扭曲动画确实有辨识度，一眼就能认出来是这部剧。</p><span class="ref">歪掉的规矩 31—33</span></div>
+
+        <div class="cmt"><div class="who"><span class="av" style="background:#2f6b5e">拾</span><span class="name">拾荒的猫</span><span class="time">11 月 19 日</span></div><p>想问一下羞妖被注视三秒失能这个规则，第 3 季是不是又用了一次？我记得井边那段好像有。</p><span class="ref">羞妖机制</span></div>
+
+        <div class="cmt"><div class="who"><span class="av" style="background:#c2582e">大</span><span class="name">大碗宽面</span><span class="time">11 月 18 日</span></div><p>《换声》作为开篇真的稳，一句话就把寄生规则讲明白。后面有些集反而绕。</p><span class="ref">换声 第 1 集</span></div>
+
+        <div class="cmt"><div class="who"><span class="av" style="background:#a9822d">林</span><span class="name">林间小径</span><span class="time">11 月 17 日</span></div><p>27 位角色的关系网有点复杂，建议先看主要六位，其余配角看到再查，不然一开始容易被劝退。</p><span class="ref">角色群像</span></div>
+
+        <div class="cmt"><div class="who"><span class="av" style="background:#3c3e58">月</span><span class="name">月半小夜曲</span><span class="time">11 月 16 日</span></div><p>第 3 季目前看下来节奏比第 2 季紧不少，希望别像上次一样中段开始拖。</p><span class="ref">第 3 季整体</span></div>
+
+      </div>
+    </section>
+
+    <!-- 9 资讯 -->
+    <section class="sec" id="news">
+      <div class="sec-head">
+        <div>
+          <h2><span class="num">08</span>相关资讯</h2>
+          <p class="sec-sub">近一个月的排播、设定与社区动态</p>
+        </div>
+      </div>
+      <div class="news">
+        <article class="news-item">
+          <span class="d">2026-11-25</span>
+          <h4><a href="/#featured">《歪歪妖精的第七盏灯》第 9 集上线，歪妖首次无法自报姓名</a></h4>
+          <p>第七盏灯点亮后，主角的名字在第 9 集被抹去。这是第 3 季开播以来讨论度最高的一集。</p>
+        </article>
+        <article class="news-item">
+          <span class="d">2026-11-23</span>
+          <h4><a href="/#deep">“记忆损耗”章节补充，歪妖代价机制首次系统整理</a></h4>
+          <p>按丢失顺序拆解为日常记忆、人名、自我认知三层，对应第 40 集与第 3 季第 9 集的具体表现。</p>
+        </article>
+        <article class="news-item">
+          <span class="d">2026-11-21</span>
+          <h4><a href="/#updates">第 3 季第 8 集：陶九交出第二盏灯，虫线短暂回归</a></h4>
+          <p>本集把叙事重心从歪线暂时拉回虫线，交代了第二盏灯的封存方式，时长 15 分钟。</p>
+        </article>
+        <article class="news-item">
+          <span class="d">2026-11-18</span>
+          <h4><a href="/#ranking">观众投票榜单更新，《同一口井》升至第一</a></h4>
+          <p>三线合流段落以微弱优势超过《歪掉的规矩》，成为目前评分最高的连续三集。</p>
+        </article>
+        <article class="news-item">
+          <span class="d">2026-11-12</span>
+          <h4><a href="/#guide">“观看顺序”指南上线，给出三条不同投入路径</a></h4>
+          <p>分别面向单集试水、支线连看和全季通看，标注了每条的推荐集数与跳过风险。</p>
+        </article>
+        <article class="news-item">
+          <span class="d">2026-11-03</span>
+          <h4><a href="/#news">第 3 季定档信息公布，共 14 集周更双集</a></h4>
+          <p>确认每周三、周六各更新一集，预计 12 月中旬完结，特别篇暂未排期。</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 10 相关推荐 -->
+    <section class="sec" id="related">
+      <div class="sec-head">
+        <div>
+          <h2><span class="num">09</span>延伸方向与相关条目</h2>
+          <p class="sec-sub">看完正片之后可以继续深入的方向</p>
+        </div>
+      </div>
+      <div class="rel-tags">
+        <a href="/#deep"><b>设定</b>九盏灯对应规则表</a>
+        <a href="/#featured"><b>条目</b>四代寄生关系图</a>
+        <a href="/#deep"><b>解析</b>羞妖遮挡构图手法</a>
+        <a href="/#featured"><b>短片</b>灯谱 8 分钟设定补完</a>
+        <a href="/#comments"><b>角色</b>灯匠陶九人物线</a>
+        <a href="/#faq"><b>规则</b>被注视三秒失能机制</a>
+        <a href="/#guide"><b>路径</b>歪线按顺序连看清单</a>
+        <a href="/#news"><b>排播</b>第 3 季完结时间预测</a>
+      </div>
+    </section>
+
+    <!-- 11 榜单 -->
+    <section class="sec" id="ranking">
+      <div class="sec-head">
+        <div>
+          <h2><span class="num">10</span>观众人气榜</h2>
+          <p class="sec-sub">按近 30 天评分与讨论量综合排序</p>
+        </div>
+      </div>
+      <div class="panel">
+        <ul class="rank">
+          <li><span class="idx">1</span><div><span class="rn">同一口井 第 52—54 集</span><span class="rs">三线合流 · 群像调度</span></div><span class="rv">9.7</span></li>
+          <li><span class="idx">2</span><div><span class="rn">歪掉的规矩 第 31—33 集</span><span class="rs">规则改写 · 文字扭曲动画</span></div><span class="rv">9.6</span></li>
+          <li><span class="idx">3</span><div><span class="rn">第七盏灯 第 9 集</span><span class="rs">最新更新 · 记忆损耗</span></div><span class="rv">9.5</span></li>
+          <li><span class="idx">4</span><div><span class="rn">换声 第 1 集</span><span class="rs">寄生设定 · 开篇</span></div><span class="rv">9.4</span></li>
+          <li><span class="idx">5</span><div><span class="rn">面具铺 第 14—16 集</span><span class="rs">羞妖机制 · 三集连看</span></div><span class="rv">9.2</span></li>
+          <li><span class="idx">6</span><div><span class="rn">交换 第 40 集</span><span class="rs">代价机制 · 第 3 季伏笔</span></div><span class="rv">9.0</span></li>
+          <li><span class="idx">7</span><div><span class="rn">红脸 第 22 集</span><span class="rs">单集独立 · 入门友好</span></div><span class="rv">8.9</span></li>
+          <li><span class="idx">8</span><div><span class="rn">虫巢 特别篇</span><span class="rs">四代寄生 · 22 分钟</span></div><span class="rv">8.8</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 12 时间线 -->
+    <section class="sec" id="timeline">
+      <div class="sec-head">
+        <div>
+          <h2><span class="num">11</span>剧情内时间线</h2>
+          <p class="sec-sub">按故事内时间整理的六个关键节点</p>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-d">故事内 · 第一年 春</div>
+            <div class="tl-t">裁缝丢失口音</div>
+            <div class="tl-s">《换声》开篇事件，第一次记录虫妖寄生的具体表现，小镇开始流传“换声”说法。</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-d">故事内 · 第一年 秋</div>
+            <div class="tl-t">面具铺重新开门</div>
+            <div class="tl-s">羞妖寄居的铺子换了一位新掌柜，客人戴面具才敢说话的习惯从这一年开始。</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-d">故事内 · 第二年 夏</div>
+            <div class="tl-t">第一条村规被改写</div>
+            <div class="tl-s">“夜里不许出门”变成“夜里只许出门”，全镇作息颠倒七天，歪妖首次现身。</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-d">故事内 · 第三年 冬</div>
+            <div class="tl-t">陶九交出第二盏灯</div>
+            <div class="tl-s">灯匠主动封存第二盏灯，虫线寄生范围被限制在小镇以北，代价是失去一段记忆。</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-d">故事内 · 第四年 春</div>
+            <div class="tl-t">同一口井边的三方对峙</div>
+            <div class="tl-s">三种妖性首次同场，灯的状态在冲突中被反复改写，三人均未全身而退。</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-d">故事内 · 第四年 冬</div>
+            <div class="tl-t">第七盏灯点亮</div>
+            <div class="tl-s">歪妖无法说出自己的名字，记忆损耗进入第三层，第 3 季主线由此展开。</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右侧辅助栏 -->
+  <aside class="side-col" aria-label="辅助信息">
+    <div class="panel widget">
+      <h3>当前热播</h3>
+      <div class="wl">
+        <a href="/#featured"><i>01</i>第七盏灯 第 9 集</a>
+        <a href="/#featured"><i>02</i>同一口井 第 52—54 集</a>
+        <a href="/#featured"><i>03</i>歪掉的规矩 第 31—33 集</a>
+        <a href="/#featured"><i>04</i>面具铺 第 14—16 集</a>
+        <a href="/#featured"><i>05</i>交换 第 40 集</a>
+      </div>
+    </div>
+
+    <div class="panel widget">
+      <h3>实时动态</h3>
+      <div class="pulse">
+        <div class="p-item"><span class="p-dot"></span><span class="p-t"><b>今天 09:30</b> 第 9 集上线</span></div>
+        <div class="p-item"><span class="p-dot"></span><span class="p-t"><b>今天 08:10</b> 新增角色档案：陶九</span></div>
+        <div class="p-item"><span class="p-dot"></span><span class="p-t"><b>昨天 21:10</b> 面具铺页面补充机制说明</span></div>
+        <div class="p-item"><span class="p-dot"></span><span class="p-t"><b>11 月 23 日</b> 记忆损耗章节上线</span></div>
+      </div>
+    </div>
+
+    <div class="panel widget">
+      <h3>角色速查</h3>
+      <div class="wl">
+        <a href="/#comments"><i>·</i>灯匠 陶九</a>
+        <a href="/#comments"><i>·</i>裁缝 陈素</a>
+        <a href="/#comments"><i>·</i>面具铺掌柜</a>
+        <a href="/#comments"><i>·</i>合唱团女孩 林小满</a>
+        <a href="/#comments"><i>·</i>歪妖本体</a>
+      </div>
+      <p class="small" style="margin-top:10px">共收录 27 位角色档案，含首次出场集数与能力说明。</p>
+    </div>
+
+    <div class="panel widget">
+      <h3>观看提示</h3>
+      <p class="small">第 3 季正在连载，建议先看《红脸》单集试水，再回到第 1 集补基础规则。歪线请按顺序连看，跳集会影响对记忆损耗的理解。</p>
+    </div>
+  </aside>
+</div>
+
+<footer class="site">
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="fb-name">
+          <svg width="30" height="30" viewBox="0 0 48 48" aria-hidden="true">
+            <rect width="48" height="48" rx="12" fill="#2f6b5e"/>
+            <path d="M24 9c4 4.6 7.4 8.8 7.4 13.6 0 4.6-3.3 8.1-7.4 8.1s-7.4-3.5-7.4-8.1C16.6 17.8 20 13.6 24 9z" fill="#e4efeb"/>
+            <circle cx="21" cy="20" r="1.7" fill="#2f6b5e"/>
+            <circle cx="27" cy="20" r="1.7" fill="#2f6b5e"/>
+          </svg>
+          <b>虫虫羞羞歪歪妖精</b>
+        </div>
+        <p>以江南虫妖传说为底色的国产原创短剧档案站，整理分集剧情、角色能力、九盏灯设定与观看顺序，帮助观众判断从哪一集入坑、哪些支线可以跳读。</p>
+      </div>
+      <div class="foot-col">
+        <h4>剧集档案</h4>
+        <ul>
+          <li><a href="/#featured">精选剧集</a></li>
+          <li><a href="/#updates">更新动态</a></li>
+          <li><a href="/#categories">题材分类</a></li>
+          <li><a href="/#ranking">人气榜单</a></li>
+          <li><a href="/#timeline">剧情时间线</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>设定与解读</h4>
+        <ul>
+          <li><a href="/#overview">世界观概览</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">观看顺序</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#related">延伸方向</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>社区</h4>
+        <ul>
+          <li><a href="/#comments">观众评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#ranking">投票榜单</a></li>
+          <li><a href="/#related">角色速查</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="note">条目信息、评分与评论为社区整理内容，剧集排播以官方发布为准。页面不提供视频播放与下载功能。</span>
+      <span>© 2026 虫虫羞羞歪歪妖精档案站 · 内容整理与社区讨论</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var input = document.getElementById('site-search');
+  var note = document.getElementById('search-note');
+  if(!input) return;
+
+  var targets = [].slice.call(document.querySelectorAll(
+    'main .card, main .updates li, main .cat, main .news-item, main details.qa, main .rank li, main .tl-item, aside .wl a'
+  ));
+  var originals = targets.map(function(el){
+    return { el: el, parent: el.parentNode, next: el.nextSibling };
+  });
+
+  function reset(){
+    originals.forEach(function(o){
+      if(o.el.parentNode !== o.parent){
+        if(o.next && o.next.parentNode === o.parent){
+          o.parent.insertBefore(o.el, o.next);
+        }else{
+          o.parent.appendChild(o.el);
+        }
+      }
+      o.el.style.display = '';
+    });
+    note.classList.remove('on');
+  }
+
+  function run(){
+    var q = input.value.trim().toLowerCase();
+    if(!q){ reset(); return; }
+    var hit = 0;
+    targets.forEach(function(el){
+      var text = (el.textContent || '').toLowerCase();
+      var alt = '';
+      var img = el.querySelector('img');
+      if(img) alt = (img.getAttribute('alt') || '').toLowerCase();
+      var ok = text.indexOf(q) > -1 || alt.indexOf(q) > -1;
+      el.style.display = ok ? '' : 'none';
+      if(ok) hit++;
+    });
+    if(hit === 0){ note.classList.add('on'); } else { note.classList.remove('on'); }
+  }
+
+  var timer = null;
+  input.addEventListener('input', function(){
+    clearTimeout(timer);
+    timer = setTimeout(run, 160);
+  });
+  input.addEventListener('search', run);
+  input.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ input.value=''; reset(); input.blur(); }
+  });
+})();
+</script>
+
+</body>
+  </html>
